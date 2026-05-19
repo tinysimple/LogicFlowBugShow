@@ -193,6 +193,7 @@ function init() {
   align-items: center;
   background: #efefef;
   overflow: auto;
+  font-size: 0;
 }
 .lf-container {
   overflow: auto;

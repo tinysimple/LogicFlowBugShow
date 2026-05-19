@@ -1,0 +1,17 @@
+diff --git a/es/LogicFlow.js b/es/LogicFlow.js
+index 97294ff7df3b0f9baafa393cf22d0af024c2ed8f..0599eaa95c796faceb889d70a3b96b90147d286d 100644
+--- a/es/LogicFlow.js
++++ b/es/LogicFlow.js
+@@ -877,6 +877,12 @@ var LogicFlow = /** @class */ (function () {
+      * 不传会自动计算画布宽高
+      */
+     LogicFlow.prototype.resize = function (width, height) {
++        if (width !== null && width !== void 0) {
++            this.container.style.width = "".concat(width, "px");
++        }
++        if (height !== null && height !== void 0) {
++            this.container.style.height = "".concat(height, "px");
++        }
+         this.graphModel.resize(width, height);
+         this.options.width = this.graphModel.width;
+         this.options.height = this.graphModel.height;

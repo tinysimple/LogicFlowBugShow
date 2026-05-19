@@ -1,0 +1,2 @@
+patchedDependencies:
+  '@logicflow/core': patches/@logicflow__core.patch

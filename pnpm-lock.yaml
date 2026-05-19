@@ -4,16 +4,21 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  '@logicflow/core':
+    hash: 87895d244364c605ede133abccf02202b5c99dee831982eb1f12bd6455b452b9
+    path: patches/@logicflow__core.patch
+
 importers:
 
   .:
     dependencies:
       '@logicflow/core':
         specifier: ^2.2.3
-        version: 2.2.3
+        version: 2.2.3(patch_hash=87895d244364c605ede133abccf02202b5c99dee831982eb1f12bd6455b452b9)
       '@logicflow/extension':
         specifier: ^2.2.3
-        version: 2.2.3(@logicflow/core@2.2.3)
+        version: 2.2.3(@logicflow/core@2.2.3(patch_hash=87895d244364c605ede133abccf02202b5c99dee831982eb1f12bd6455b452b9))
       core-js:
         specifier: ^3.8.3
         version: 3.49.0
@@ -4634,7 +4639,7 @@ snapshots:
 
   '@leichtgewicht/ip-codec@2.0.5': {}
 
-  '@logicflow/core@2.2.3':
+  '@logicflow/core@2.2.3(patch_hash=87895d244364c605ede133abccf02202b5c99dee831982eb1f12bd6455b452b9)':
     dependencies:
       classnames: 2.5.1
       lodash-es: 4.18.1
@@ -4645,10 +4650,10 @@ snapshots:
       preact: 10.29.2
       uuid: 9.0.1
 
-  '@logicflow/extension@2.2.3(@logicflow/core@2.2.3)':
+  '@logicflow/extension@2.2.3(@logicflow/core@2.2.3(patch_hash=87895d244364c605ede133abccf02202b5c99dee831982eb1f12bd6455b452b9))':
     dependencies:
       '@antv/hierarchy': 0.6.14
-      '@logicflow/core': 2.2.3
+      '@logicflow/core': 2.2.3(patch_hash=87895d244364c605ede133abccf02202b5c99dee831982eb1f12bd6455b452b9)
       classnames: 2.5.1
       lodash-es: 4.18.1
       medium-editor: 5.23.3
